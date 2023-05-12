@@ -43,8 +43,8 @@ public:
     void set_maxBytes(uint32_t numBytes);
     uint32_t get_maxBytes();
 
-    void set_weight(double weight);
-    double get_weight();
+    void set_weight(uint32_t weight);
+    uint32_t get_weight();
 
     void set_priority_level(uint32_t pl);
     uint32_t get_priority_level();

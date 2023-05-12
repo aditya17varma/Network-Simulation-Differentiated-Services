@@ -101,11 +101,11 @@ uint32_t TrafficClass::get_maxBytes(){
     return maxBytes;
 }
 
-void TrafficClass::set_weight(double w){
+void TrafficClass::set_weight(uint32_t w){
     weight = w;
 }
 
-double TrafficClass::get_weight(){
+uint32_t TrafficClass::get_weight(){
     return weight;
 }
 

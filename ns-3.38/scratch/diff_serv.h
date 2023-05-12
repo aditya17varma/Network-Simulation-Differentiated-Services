@@ -24,6 +24,8 @@ class DiffServ : Queue<Packet> {
     public:
         DiffServ();
 
+        // ~DiffServ();
+
         // void SetMode(QueueMode mode);
 
         //QueueMode GetMode();

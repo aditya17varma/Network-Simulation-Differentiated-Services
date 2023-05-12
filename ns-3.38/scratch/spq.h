@@ -21,6 +21,8 @@ class SPQ: public DiffServ {
     public:
         SPQ();
 
+        // ~SPQ();
+
         Ptr<const Packet> Schedule() const override;
 
         void setPriority(int q, uint32_t p);

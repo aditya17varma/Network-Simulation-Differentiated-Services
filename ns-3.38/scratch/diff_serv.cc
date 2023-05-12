@@ -37,14 +37,16 @@ bool DiffServ::DoEnqueue(Ptr<Packet> packet){
     uint32_t classification = Classify(packet);
     std::cout << "Classified packet to: " << classification << std::endl;
 
-    q_class[classification]->Enqueue(packet);
+    bool eq = q_class[classification]->Enqueue(packet);
 
-    return false;
+    return eq;
 }
 
 Ptr<Packet> DiffServ::DoDequeue(){
     Ptr<const Packet> dqPacket = Schedule();
     uint32_t classification = Classify(dqPacket->Copy());
+
+    std::cout << "DQ: classification: " << classification << std::endl;
 
     Ptr<Packet> returnPacket = q_class[classification]->Dequeue();
 
@@ -108,9 +110,6 @@ void DiffServ::InitializeTrafficClass(Ipv4Address srcIP, Ipv4Address destIP, int
     AddTrafficClass(spqTC);
 
     // q_class.AddT
-
-    
-
     numQueues++;
 
     std::cout << "Traffic Class added with filters " << srcIP << " "<< destIP << " "<< destPort << " numQueues now "<< numQueues<< std::endl;

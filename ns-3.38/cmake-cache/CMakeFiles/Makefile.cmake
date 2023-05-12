@@ -735,6 +735,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "examples/wireless/CMakeFiles/wifi-ofdm-eht-validation.dir/DependInfo.cmake"
   "examples/wireless/CMakeFiles/wifi-eht-network.dir/DependInfo.cmake"
   "scratch/CMakeFiles/scratch_diff_serv.dir/DependInfo.cmake"
+  "scratch/CMakeFiles/scratch_drr.dir/DependInfo.cmake"
   "scratch/CMakeFiles/scratch_filter.dir/DependInfo.cmake"
   "scratch/CMakeFiles/scratch_filter_elements.dir/DependInfo.cmake"
   "scratch/CMakeFiles/scratch_lab32.dir/DependInfo.cmake"

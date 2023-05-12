@@ -5568,6 +5568,19 @@ scratch_diff_serv/fast:
 .PHONY : scratch_diff_serv/fast
 
 #=============================================================================
+# Target rules for targets named scratch_drr
+
+# Build rule for target.
+scratch_drr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scratch_drr
+.PHONY : scratch_drr
+
+# fast build rule for target.
+scratch_drr/fast:
+	$(MAKE) $(MAKESILENT) -f scratch/CMakeFiles/scratch_drr.dir/build.make scratch/CMakeFiles/scratch_drr.dir/build
+.PHONY : scratch_drr/fast
+
+#=============================================================================
 # Target rules for targets named scratch_filter
 
 # Build rule for target.
@@ -6166,6 +6179,7 @@ help:
 	@echo "... sample-simulator"
 	@echo "... scratch-nested-subdir-lib"
 	@echo "... scratch_diff_serv"
+	@echo "... scratch_drr"
 	@echo "... scratch_filter"
 	@echo "... scratch_filter_elements"
 	@echo "... scratch_lab32"

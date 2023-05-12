@@ -21,7 +21,7 @@ FilterSourceIPAddress::FilterSourceIPAddress(Ipv4Address srcIp)
 bool 
 FilterSourceIPAddress::Match(Ptr<Packet> packet) const{
     //Check source IP address
-    std::cout << "Matching Source IP" << std::endl;
+    // std::cout << "Matching Source IP" << std::endl;
     Ptr<Packet> copy = packet->Copy();
     
     // PppHeader ppph;
@@ -42,7 +42,7 @@ FilterSourceMask::FilterSourceMask(Ipv4Address srcIp, Ipv4Mask srcMask)
 bool 
 FilterSourceMask::Match(Ptr<Packet> packet) const {
     //Check source IP address and Mask
-    std::cout << "Matching Source Mask" << std::endl;
+    // std::cout << "Matching Source Mask" << std::endl;
     Ptr<Packet> copy = packet->Copy();
 
     // PppHeader ppph;
@@ -61,7 +61,7 @@ FilterSourcePort::FilterSourcePort(uint32_t srcPort)
 bool 
 FilterSourcePort::Match(Ptr<Packet> packet) const{
     //Check source Port
-    std::cout << "Matching Source Port" << std::endl;
+    // std::cout << "Matching Source Port" << std::endl;
 
     Ptr<Packet> copy = packet->Copy();
 
@@ -77,7 +77,7 @@ FilterSourcePort::Match(Ptr<Packet> packet) const{
         copy->PeekHeader(udpHeader);
         uint16_t src_port = udpHeader.GetSourcePort();
 
-        std::cout << "UDP Packet srcPort: " << src_port << " Matched: " << m_srcPort << std::endl;
+        // std::cout << "UDP Packet srcPort: " << src_port << " Matched: " << m_srcPort << std::endl;
 
         return src_port == m_srcPort;
     }
@@ -86,12 +86,12 @@ FilterSourcePort::Match(Ptr<Packet> packet) const{
         copy->PeekHeader(tcpHeader);
         uint16_t src_port = tcpHeader.GetSourcePort();
 
-        std::cout << "TCP Packet srcPort: " << src_port << " Matched: " << m_srcPort << std::endl;
+        // std::cout << "TCP Packet srcPort: " << src_port << " Matched: " << m_srcPort << std::endl;
         
         return src_port == m_srcPort;
     }
     else {
-        std::cout << "Invalid Protocol number in IP Header: " << static_cast<int>(packet_protocol) << std::endl;
+        // std::cout << "Invalid Protocol number in IP Header: " << static_cast<int>(packet_protocol) << std::endl;
         return 0;
     }
     
@@ -104,7 +104,7 @@ FilterDestinationIPAddress::FilterDestinationIPAddress(Ipv4Address destIp)
 bool 
 FilterDestinationIPAddress::Match(Ptr<Packet> packet) const{
     //Check source IP address
-    std::cout << "Matching Dest IP" << std::endl;
+    // std::cout << "Matching Dest IP" << std::endl;
 
     Ptr<Packet> copy = packet->Copy();
     
@@ -123,7 +123,7 @@ FilterDestinationMask::FilterDestinationMask(Ipv4Address destIp, Ipv4Mask destMa
 bool 
 FilterDestinationMask::Match(Ptr<Packet> packet) const {
     //Check dest IP address and Mask
-    std::cout << "Matching Dest Mask" << std::endl;
+    // std::cout << "Matching Dest Mask" << std::endl;
 
     Ptr<Packet> copy = packet->Copy();
     
@@ -143,7 +143,7 @@ FilterDestinationPort::FilterDestinationPort(uint32_t destPort)
 bool 
 FilterDestinationPort::Match(Ptr<Packet> packet) const{
     //Check dest Port
-    std::cout << "Matching Dest Port" << std::endl;
+    // std::cout << "Matching Dest Port" << std::endl;
 
     Ptr<Packet> copy = packet->Copy();
     
@@ -158,7 +158,7 @@ FilterDestinationPort::Match(Ptr<Packet> packet) const{
         copy->PeekHeader(udpHeader);
         uint16_t dest_port = udpHeader.GetDestinationPort();
 
-        std::cout << "UDP Packet destPort: " << dest_port << " Matched: " << m_destPort << std::endl;
+        // std::cout << "UDP Packet destPort: " << dest_port << " Matched: " << m_destPort << std::endl;
 
         return dest_port == m_destPort;
     }
@@ -167,12 +167,12 @@ FilterDestinationPort::Match(Ptr<Packet> packet) const{
         copy->PeekHeader(tcpHeader);
         uint16_t dest_port = tcpHeader.GetDestinationPort();
 
-        std::cout << "TCP Packet destPort: " << dest_port << " Matched: " << m_destPort << std::endl;
+        // std::cout << "TCP Packet destPort: " << dest_port << " Matched: " << m_destPort << std::endl;
         
         return dest_port == m_destPort;
     }
     else {
-        std::cout << "Invalid Protocol number in IP Header: " << static_cast<int>(packet_protocol) << std::endl;
+        // std::cout << "Invalid Protocol number in IP Header: " << static_cast<int>(packet_protocol) << std::endl;
         return 0;
     }
     
@@ -184,7 +184,7 @@ FilterProtocol::FilterProtocol(uint8_t protocol)
 bool 
 FilterProtocol::Match(Ptr<Packet> packet) const{
     //Check dest Port
-    std::cout << "Matching Protocol" << std::endl;
+    // std::cout << "Matching Protocol" << std::endl;
 
     Ptr<Packet> copy = packet->Copy();
     

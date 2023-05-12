@@ -187,6 +187,20 @@ scratch_diff_serv/fast:
 .PHONY : scratch_diff_serv/fast
 
 # Convenience name for target.
+scratch/CMakeFiles/scratch_drr.dir/rule:
+	cd /Users/aditya/ns-allinone-3.38/ns-3.38/cmake-cache && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scratch/CMakeFiles/scratch_drr.dir/rule
+.PHONY : scratch/CMakeFiles/scratch_drr.dir/rule
+
+# Convenience name for target.
+scratch_drr: scratch/CMakeFiles/scratch_drr.dir/rule
+.PHONY : scratch_drr
+
+# fast build rule for target.
+scratch_drr/fast:
+	cd /Users/aditya/ns-allinone-3.38/ns-3.38/cmake-cache && $(MAKE) $(MAKESILENT) -f scratch/CMakeFiles/scratch_drr.dir/build.make scratch/CMakeFiles/scratch_drr.dir/build
+.PHONY : scratch_drr/fast
+
+# Convenience name for target.
 scratch/CMakeFiles/scratch_filter.dir/rule:
 	cd /Users/aditya/ns-allinone-3.38/ns-3.38/cmake-cache && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scratch/CMakeFiles/scratch_filter.dir/rule
 .PHONY : scratch/CMakeFiles/scratch_filter.dir/rule
@@ -335,6 +349,30 @@ diff_serv.s: diff_serv.cc.s
 diff_serv.cc.s:
 	cd /Users/aditya/ns-allinone-3.38/ns-3.38/cmake-cache && $(MAKE) $(MAKESILENT) -f scratch/CMakeFiles/scratch_diff_serv.dir/build.make scratch/CMakeFiles/scratch_diff_serv.dir/diff_serv.cc.s
 .PHONY : diff_serv.cc.s
+
+drr.o: drr.cc.o
+.PHONY : drr.o
+
+# target to build an object file
+drr.cc.o:
+	cd /Users/aditya/ns-allinone-3.38/ns-3.38/cmake-cache && $(MAKE) $(MAKESILENT) -f scratch/CMakeFiles/scratch_drr.dir/build.make scratch/CMakeFiles/scratch_drr.dir/drr.cc.o
+.PHONY : drr.cc.o
+
+drr.i: drr.cc.i
+.PHONY : drr.i
+
+# target to preprocess a source file
+drr.cc.i:
+	cd /Users/aditya/ns-allinone-3.38/ns-3.38/cmake-cache && $(MAKE) $(MAKESILENT) -f scratch/CMakeFiles/scratch_drr.dir/build.make scratch/CMakeFiles/scratch_drr.dir/drr.cc.i
+.PHONY : drr.cc.i
+
+drr.s: drr.cc.s
+.PHONY : drr.s
+
+# target to generate assembly for a file
+drr.cc.s:
+	cd /Users/aditya/ns-allinone-3.38/ns-3.38/cmake-cache && $(MAKE) $(MAKESILENT) -f scratch/CMakeFiles/scratch_drr.dir/build.make scratch/CMakeFiles/scratch_drr.dir/drr.cc.s
+.PHONY : drr.cc.s
 
 filter.o: filter.cc.o
 .PHONY : filter.o
@@ -590,6 +628,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... scratch_diff_serv"
+	@echo "... scratch_drr"
 	@echo "... scratch_filter"
 	@echo "... scratch_filter_elements"
 	@echo "... scratch_lab32"
@@ -602,6 +641,9 @@ help:
 	@echo "... diff_serv.o"
 	@echo "... diff_serv.i"
 	@echo "... diff_serv.s"
+	@echo "... drr.o"
+	@echo "... drr.i"
+	@echo "... drr.s"
 	@echo "... filter.o"
 	@echo "... filter.i"
 	@echo "... filter.s"

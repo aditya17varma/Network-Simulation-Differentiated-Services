@@ -9205,6 +9205,12 @@
 },
 {
   "directory": "/Users/aditya/ns-allinone-3.38/ns-3.38/cmake-cache/scratch",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DHAVE_LIBXML2 -DHAVE_SQLITE3 -DNS3_ASSERT_ENABLE -DNS3_BUILD_PROFILE_DEBUG -DNS3_LOG_ENABLE -DPROJECT_SOURCE_PATH=\\\"/Users/aditya/ns-allinone-3.38/ns-3.38\\\" -D__APPLE__ -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr -I/Users/aditya/ns-allinone-3.38/ns-3.38/build/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/libxml2 -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -fPIE   -fcolor-diagnostics -Xclang -fno-pch-timestamp -Wall -Werror -Wno-error=deprecated-declarations -Winvalid-pch -Xarch_arm64 -include/Users/aditya/ns-allinone-3.38/ns-3.38/cmake-cache/CMakeFiles/stdlib_pch_exec.dir/cmake_pch_arm64.hxx -o CMakeFiles/scratch_drr.dir/drr.cc.o -c /Users/aditya/ns-allinone-3.38/ns-3.38/scratch/drr.cc",
+  "file": "/Users/aditya/ns-allinone-3.38/ns-3.38/scratch/drr.cc",
+  "output": "scratch/CMakeFiles/scratch_drr.dir/drr.cc.o"
+},
+{
+  "directory": "/Users/aditya/ns-allinone-3.38/ns-3.38/cmake-cache/scratch",
   "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DHAVE_LIBXML2 -DHAVE_SQLITE3 -DNS3_ASSERT_ENABLE -DNS3_BUILD_PROFILE_DEBUG -DNS3_LOG_ENABLE -DPROJECT_SOURCE_PATH=\\\"/Users/aditya/ns-allinone-3.38/ns-3.38\\\" -D__APPLE__ -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr -I/Users/aditya/ns-allinone-3.38/ns-3.38/build/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/libxml2 -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -fPIE   -fcolor-diagnostics -Xclang -fno-pch-timestamp -Wall -Werror -Wno-error=deprecated-declarations -Winvalid-pch -Xarch_arm64 -include/Users/aditya/ns-allinone-3.38/ns-3.38/cmake-cache/CMakeFiles/stdlib_pch_exec.dir/cmake_pch_arm64.hxx -o CMakeFiles/scratch_filter.dir/filter.cc.o -c /Users/aditya/ns-allinone-3.38/ns-3.38/scratch/filter.cc",
   "file": "/Users/aditya/ns-allinone-3.38/ns-3.38/scratch/filter.cc",
   "output": "scratch/CMakeFiles/scratch_filter.dir/filter.cc.o"
