@@ -73,7 +73,7 @@ The relevant project files are in the /scratch folder. Pcap files and the graphs
 
 Here is an image of the base DiffServ class structure and inheritance:
 
-
+![Image](Fig1.png)
 
 
 Here's a preview of how the topology is setup:
