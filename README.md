@@ -1,5 +1,7 @@
 # Network Programming - Project 2
 
+(please refer to the Differentiated-Services pdf for more details)
+
 Project to implement a selection of differentiated services.Two quality-of-service (QoS) mechanisms have been implemented: SPQ and DRR. 
 
 **Part 1** involved building the base DiffServ class, and the TrafficClass, Filter, and FilterElements classes.
