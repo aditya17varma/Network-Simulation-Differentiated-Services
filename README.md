@@ -1,4 +1,4 @@
-# Network Programming - Project 2
+# Network Simulation & Differentiated Services
 
 (please refer to the Differentiated-Services pdf for more details)
 
